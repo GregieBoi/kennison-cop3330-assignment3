@@ -1,0 +1,28 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class app {
+..Void Methods..
++ main()
++ sortWords()
++ printOutput()
+..ArrayList<Word> Methods..
++ createInput()
+..Int Methods..
++ findBigWordLen()
+}
+
+class Word {
+String name
+int count
+..Basic Setter..
++ setName()
++ incrementCount()
+..Basic Getter..
++ getName()
++ getCount()
+}
+
+app *- Word
+
+@enduml

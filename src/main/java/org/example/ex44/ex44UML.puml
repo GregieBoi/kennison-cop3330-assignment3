@@ -1,0 +1,42 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class app {
+..Void Methods..
++ main()
++ printOutput()
+..Products Methods..
++ convertToJava()
+..Product Methods..
++ productSearch()
+..Int Methods..
++ checkInventory()
+}
+
+class Products {
+Product[] products
+..Basic Setter..
++ setProducts()
+..Basic Getter..
++ getProdcuts()
+}
+
+class Product {
+String name
+double price
+int quantity
+..Basic Setter..
++ setName()
++ setPrice()
++ setQuantity()
+..Basic Getter..
++ getName()
++ getPrice()
++ getQuantity()
+}
+
+app *- Products
+app *- Product
+Products *- Product
+
+@enduml

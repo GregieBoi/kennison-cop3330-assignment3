@@ -1,0 +1,24 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class app {
+..Void Methods..
++main()
++addNameToList()
++writeToFile()
+..ArrayList<name> Methods..
++createList()
++sortList()
+}
+
+class name {
+String lastFirst
+..Simple Setter..
++ setLastFirst()
+..Simple Getter..
++ getLastFirst()
+}
+
+app *- name
+
+@enduml

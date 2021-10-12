@@ -1,0 +1,31 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class app {
+..Void Methods..
++ main()
++ addEmployee()
++ printOutput()
+..ArrayList<Employee> Methods..
++ createList()
+..String Methods..
++ parseCharArr()
+}
+
+class Employee {
+String firstName
+String lastName
+String salary
+..Simple Setter..
++ setFirstName()
++ setLastName()
++ setSalary()
+..Simple Getter..
++ getFirstName()
++ getLastName()
++ getSalary()
+}
+
+app *= Employee
+
+@enduml

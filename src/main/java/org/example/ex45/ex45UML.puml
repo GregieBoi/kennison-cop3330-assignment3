@@ -1,0 +1,15 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class app {
+..Void Methods..
++ main()
++ printOutput()
+..ArrayList<String> Methods..
++ createInput()
++ changeUtilize()
+..String Methods..
++ getFileOut()
+}
+
+@enduml

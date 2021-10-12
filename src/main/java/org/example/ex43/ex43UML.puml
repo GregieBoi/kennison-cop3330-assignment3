@@ -1,0 +1,34 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class app {
+..Void Methods..
++ main()
++ createDirectory()
++ createIndex()
++ createJS()
++ createCSS()
+..Website Methods..
++ createWebsite()
+}
+
+class Website {
+String name
+String author
+Boolean javaScript
+Boolean css
+..Basic Setters..
++ setName()
++ setAuthor()
++ setJS()
++ setCSS()
+..Basic Getters..
++ getName()
++ getAuthor()
++ getJS()
++ getCSS()
+}
+
+app *- Website
+
+@enduml
